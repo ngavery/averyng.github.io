@@ -1,0 +1,182 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Wix Madefor Text', sans-serif;  
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-color: #fffcef;
+    padding: 0 10%;
+    margin-top: 10%;
+}
+
+/*navbar text hover*/
+
+nav {
+    height: 10vh;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 8%;
+    padding: 0 10%;
+    position: fixed;  /* Makes the navbar stay in place */
+    top: 0;           /* Sticks to the top */
+    left: 0;
+    right: 0;
+    background-color: white; 
+}
+
+#bar a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Wix Madefor Text', sans-serif;  
+    color: rgb(24, 24, 24);
+    font-size: 20px;
+    transition: 0.3s;
+    letter-spacing: 0.5px;
+}
+nav a:after{
+    content: "";
+    position: absolute;
+    background-color: rgb(24, 24, 24);
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+nav a:hover:after{
+    width: 100%;
+}
+
+/*Header button*/
+
+.header-btn {
+    margin-left: auto;
+    text-decoration: none;
+    font-family: 'Wix Madefor Text', sans-serif;  
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #9CAF88;
+    transition: 0.3s;
+    border-radius: 5px;
+    height: 45px;
+    Width: 200px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+}
+.header-btn:hover {
+    background-color: #798d63;
+}
+
+/*Main section*/
+
+.content {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 10%;
+    gap: 10px;
+}
+
+h1 {
+    color: rgb(24, 24, 24);
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #9CAF88;
+    font-size: 7em;
+}
+
+h2::after {
+    content: '|';
+    font-weight: normal;
+    font-size: 1.1em;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+p {
+    color: rgb(24, 24, 24);
+    font-size: 1.5em;
+    max-width: 60ch;
+}
+
+.portrait {
+    height: 60vh;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Socials*/
+
+.socials {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    font-size: 30px;
+    border: 2px solid rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.socials a:hover {
+    background-color: #9CAF88;
+    color: #fffcef;
+    border-color: #fffcef;
+    transition: 0.3s;
+}
+
+/* Project preview section */
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 80px;
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 15%;
+}
+
+.image-card img {
+    width: 70%;
+    border-radius: 10px;
+    object-fit: contain;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
