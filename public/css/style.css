@@ -38,12 +38,32 @@ nav {
     z-index: 100;
 }
 
+.nav-menu {
+    height: 10vh;
+    flex: 1;
+    display: flex;
+    gap: 8%;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
 .logo {
     font-size: 2em;
     font-weight: bold;
     color:#9CAF88;
     text-decoration: none;
     font-family: "Arizonia", cursive;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+#contact {
+    display: none;
 }
 
 .item {
@@ -356,14 +376,58 @@ nav {
 
 /* FOR PHONE */
 @media (max-width: 1000px) {
-    .item {
+    .header-btn {
         display: none;
+    }
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+    #contact {
+        display: block;
+    }
+    .bar {
+        display: block;
+        width: 25px;
+        height: 4px;
+        margin: 4px auto;
+        background-color: rgb(24, 24, 24);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }    
+
+    .nav-menu {
+        position: fixed;
+        top: -100%;
+        gap: 0;
+        flex-direction: column;
+        background-color: white;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        top: 70px;;
     }
     .content {
         margin-top: 10vh;
         grid-template-columns: 1fr;
         height:auto;
-
     }
     .left {
         justify-content: center;
@@ -420,7 +484,7 @@ nav {
 
     .footer-right {
         display: flex;
-        flex-direction: row;    /* Ensure horizontal alignment */
+        flex-direction: row;
         justify-content: center;
         align-items: center;
         margin-right: auto;
@@ -434,7 +498,7 @@ nav {
     .footer h1 {
         font-size: 2.5em;
         margin-top: 60px;
-        margin-bottom: 5px; /* reduce spacing under heading */
+        margin-bottom: 5px;
     }
 
     .copyright {
