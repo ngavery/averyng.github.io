@@ -106,10 +106,10 @@ nav a:hover:after{
 .avery {
     margin-bottom: 15px;
     color: #9CAF88;
-    border-right: 8px solid;
+    border-right: 5px solid;
     border-color: #9b9682;
     font-size: 6em;
-    width: 51.9%;
+    width: 490px;
     white-space: nowrap;
     overflow: hidden;
     animation:
@@ -123,6 +123,7 @@ nav a:hover:after{
 
 @keyframes typing {
     from {width: 0;}
+    to {width: 490px;}
 }
 
 .engineer {
