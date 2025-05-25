@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="public/css/Portfolio-css.css">
+    <link rel="stylesheet" href="public/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -14,18 +14,19 @@
     <section id="bar">
         <header>
             <nav>          
-                <a href="home.html">Home</a>
+                <a href="index.html">Home</a>
                 <a href="#projects">Projects</a>
                 <a href="public/images/Avery Ng - Resume (Co-op).pdf" target="_blank" rel="noopener noreferrer">Resume</a>
                 <button class="header-btn">Contact me</a>
             </nav>
         </header>
     </section>
+
     <div class="content">
 
         <div class="left">
-            <h1>Hi, my name is </h1>
-            <h2>AVERY NG</h2>
+            <h1 class="hi">Hi, my name is </h1>
+            <h2 class="avery">AVERY NG</h2>
             <p class="engineer"> I'm an aspiring software engineer studying at the University of Ottawa. I love learning new technologies and sharing my knowledge with others. I approach my work with a strong problem-solving mindset and lots of creativity. </p>
             <div class="socials">
                 <a href="https://github.com/ngavery" target="_blank" rel="noopener noreferrer">
@@ -46,19 +47,50 @@
             </div>
         </div>    
     </div>
+
     <section id="projects" class="projects">
-        <div class="image-card">
-            <img src="public/images/blankimage.jpg">
-            <p>Project 1</p>
-        </div>
-        <div class="image-card">
-            <img src="public/images/blankimage.jpg">
-            <p>Project 2</p>
-        </div>
-        <div class="image-card">
-            <img src="public/images/blankimage.jpg">
-            <p>Project 3</p>
+
+        <h1>Featured Projects</h1>
+
+        <div class="projects-container"> 
+            <a href="project.html" class="project-card">
+                <img src="public/images/guyatdesk.png">
+                <h3>Service Website</h3>
+                <p>Description</p>
+            </a>
+            <a href="project.html" class="project-card">
+                <img src="public/images/2D-Game-Art.jpg">
+                <h3>Video Game</h3>
+                <p>Description</p>
+            </a>
+            <a href="project.html" class="project-card">
+                <img src="public/images/E-commerce-App-JPG-File-scaled.jpg">
+                <h3>E-commerce Website</h3>
+                <p>Description</p>
+            </a>
+            <a href="project.html" class="project-card">
+                <img src="public/images/1_09GHTiKiN0ltHd-c_FggJg.png">
+                <h3>Data Analysis Website</h3>
+                <p>Description</p>
+            </a>
         </div>
     </section>
+
+    <div class="footer">
+        <h1>Get in Touch</h1>
+
+        <div class="footer-container">
+            <div class="footer-left"> 
+                <p>Thank you for visiting my portfolio! If you have any questions or would like to connect, feel free to reach out to me via email.</p>
+            </div>
+            <div class="footer-right">
+                <i class="fa-solid fa-envelope"></i>            
+                <a href="https://mail.google.com/mail/u/0/" target="_blank" rel="noopener noreferrer">
+                    <p>ngavery1@gmail.com </p>
+                </a>
+            </div>
+        </div>
+
+        <p class="copyright">© 2023 Avery Ng. All rights reserved.</p>
 </body>
 </html>
