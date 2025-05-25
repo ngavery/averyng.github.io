@@ -12,6 +12,13 @@ html {
 
 body {
     font-family: 'Wix Madefor Text', sans-serif;  
+    overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 /*navbar text hover*/
@@ -133,8 +140,10 @@ nav a:hover:after{
 }
 
 .portrait {
-    height: 50vh;
+    height: auto;
+    width: 50vh;
     border-radius: 50%;
+    max-width: 90vw;
 }
 
 /*Socials*/
@@ -335,4 +344,48 @@ nav a:hover:after{
 
 .back-btn:hover {
     background-color: #798d63;
+}
+
+/* FOR PHONE */
+@media (max-width: 1000px) {
+    .content {
+        margin-top: 10vh;
+        grid-template-columns: 1fr;
+        height:auto;
+
+    }
+    .left {
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .right {
+        order: -1;
+    }
+    .hi {
+        font-size: 2em;
+    }
+    .avery {
+        font-size: 4em;
+        width: 350px;
+    }
+    @keyframes typing {
+        from {width: 0;}
+        to {width: 350px;}
+    }
+}
+
+/* FOR LONG MONITOR*/
+@media (min-height: 1000px) {
+    .hi {
+        font-size: 4em;
+    }
+    .avery {
+        font-size: 8em;
+        width: 650px;
+    }
+    @keyframes typing {
+        from {width: 0;}
+        to {width: 650px;}
+    }
 }
