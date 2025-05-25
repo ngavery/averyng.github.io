@@ -38,7 +38,15 @@ nav {
     z-index: 100;
 }
 
-#bar a{
+.logo {
+    font-size: 2em;
+    font-weight: bold;
+    color:#9CAF88;
+    text-decoration: none;
+    font-family: "Arizonia", cursive;
+}
+
+.item {
     position: relative;
     text-decoration: none;
     font-family: 'Wix Madefor Text', sans-serif;  
@@ -46,7 +54,7 @@ nav {
     font-size: 20px;
     letter-spacing: 0.5px;
 }
-nav a:after{
+.item:after{
     content: "";
     position: absolute;
     background-color: rgb(24, 24, 24);
@@ -56,7 +64,7 @@ nav a:after{
     bottom: -10px;
     transition: 0.3s;
 }
-nav a:hover:after{
+.item:hover:after{
     width: 100%;
 }
 
@@ -143,7 +151,7 @@ nav a:hover:after{
     height: auto;
     width: 50vh;
     border-radius: 50%;
-    max-width: 90vw;
+    max-width: 80vw;
 }
 
 /*Socials*/
@@ -188,7 +196,7 @@ nav a:hover:after{
 .projects h1 {
     font-size: 5em;
     padding: 5%;
-    color: #9CAF88;
+    color: rgb(24, 24, 24);
     margin-top: 3%;
 }
 
@@ -348,6 +356,9 @@ nav a:hover:after{
 
 /* FOR PHONE */
 @media (max-width: 1000px) {
+    .item {
+        display: none;
+    }
     .content {
         margin-top: 10vh;
         grid-template-columns: 1fr;
@@ -366,12 +377,69 @@ nav a:hover:after{
         font-size: 2em;
     }
     .avery {
-        font-size: 4em;
-        width: 350px;
+        font-size: 3em;
+        width: 247px;
     }
     @keyframes typing {
         from {width: 0;}
-        to {width: 350px;}
+        to {width: 247px;}
+    }
+    .engineer {
+        font-size: 1em;
+        max-width: 90%;
+    }
+    
+    .projects h1 {
+        font-size: 2.5em;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .project-card {
+        margin-bottom: 20px;
+    }
+    .project-card h3 {
+        font-size: 1.5em;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        max-height: 50vh;
+        gap: 10px;
+    }
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 1em;
+        margin-right: auto;
+    }
+    .footer-left p {
+        max-width: 90%;
+        margin-right: auto;
+    }
+
+    .footer-right {
+        display: flex;
+        flex-direction: row;    /* Ensure horizontal alignment */
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+    .footer-right p {
+        margin-left: 10px;
+    }
+    
+    .footer h1 {
+        font-size: 2.5em;
+        margin-top: 60px;
+        margin-bottom: 5px; /* reduce spacing under heading */
+    }
+
+    .copyright {
+        margin-top: 5px;
+        margin-bottom: 60px;
     }
 }
 
