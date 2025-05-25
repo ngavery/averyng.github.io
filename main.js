@@ -11,4 +11,4 @@ function restartTyping() {
 
 restartTyping();
 
-setInterval(restartTyping, 8000);
+setInterval(restartTyping, 12000);
