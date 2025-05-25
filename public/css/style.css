@@ -1,9 +1,9 @@
-*,
-*:before,
-*:after{
+*, *:before, *:after{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: red solid 1px;
+    overflow-x: hidden;
 }
 
 html {
@@ -12,7 +12,7 @@ html {
 
 body {
     font-family: 'Wix Madefor Text', sans-serif;  
-    overflow-x: hidden;
+
 }
 
 .container {
@@ -37,10 +37,12 @@ nav {
     right: 0;
     background-color: white;
     z-index: 100;
+    box-sizing: border-box;
 }
 
 .nav-menu {
     height: 10vh;
+    max-width: 100%;
     flex: 1;
     display: flex;
     gap: 8%;
@@ -48,6 +50,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
+    box-sizing: border-box;
 }
 
 .logo {
