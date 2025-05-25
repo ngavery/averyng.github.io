@@ -23,8 +23,8 @@ nav {
     align-items: center;
     gap: 8%;
     padding: 0 10%;
-    position: fixed;  /* Makes the navbar stay in place */
-    top: 0;           /* Sticks to the top */
+    position: fixed;
+    top: 0;
     left: 0;
     right: 0;
     background-color: white;
@@ -106,24 +106,23 @@ nav a:hover:after{
 .avery {
     margin-bottom: 15px;
     color: #9CAF88;
+    border-right: 5px solid;
+    border-color: #9b9682;
     font-size: 6em;
+    width: 54%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+        typing 2.5s,
+        cursor 0.4s step-end infinite alternate;
 }
 
-.avery::after {
-    content: '|';
-    font-weight: normal;
-    font-size: 1.1em;
-    color:#b8b29b;
-    animation: blink 1s infinite;
+@keyframes cursor {
+    50% {border-color: transparent;}
 }
 
-@keyframes blink {
-    0%, 49% {
-        opacity: 1;
-    }
-    50%, 100% {
-        opacity: 0;
-    }
+@keyframes typing {
+    from {width: 0;}
 }
 
 .engineer {
@@ -261,10 +260,9 @@ nav a:hover:after{
 }
 
 .footer-right i {
-    border: 2px solid white; /* Adjust color and width as needed */
-    border-radius: 50%; /* Makes the border circular */
-    padding: 10px; /* Adjust padding to control the size of the circle */
-    display: inline-flex; /* Ensures proper alignment */
+    border: 2px solid white;
+    border-radius: 50%;
+    padding: 8px;
     justify-content: center;
     align-items: center;
 }
