@@ -522,6 +522,7 @@ nav {
     .about p {
         font-size: 1em;
         text-align: left;
+        max-width: 90%;
     }
 
     /* PROJECTS */
