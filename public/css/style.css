@@ -25,11 +25,11 @@ nav {
     max-width: 100%;
     align-items: center;
     gap: 8%;
-    padding: 0 10%;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    padding: 0 10%;
     background-color: white;
     z-index: 100;
     box-sizing: border-box;
@@ -118,7 +118,9 @@ nav {
     padding: 10%;
     height: 90vh;
     width: 100%;
+    justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .left {
@@ -212,6 +214,8 @@ nav {
     background-color: white;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
 }
 
 .projects h1 {
@@ -265,6 +269,7 @@ nav {
     height: 20%;
     padding: 5%;
     gap: 30px;
+    box-sizing: border-box;
 }
 
 .footer-container {
