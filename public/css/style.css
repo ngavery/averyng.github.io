@@ -513,11 +513,11 @@ nav {
     }
     .avery {
         font-size: 3em;
-        width: 247px;
+        width: 246px;
     }
     @keyframes typing {
         from {width: 0;}
-        to {width: 247px;}
+        to {width: 246px;}
     }
     .engineer {
         font-size: 1em;
