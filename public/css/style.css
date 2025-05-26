@@ -425,7 +425,9 @@ nav {
     .item {
         margin: 16px 0;
     }
-
+    .nav {
+        padding: 0 5%;
+    }
     .nav-menu.active {
         top: 70px;;
     }
