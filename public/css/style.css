@@ -388,11 +388,14 @@ nav {
     #contact {
         display: block;
     }
+    .avery {
+        border-width: 4px;
+    }
     .bar {
         display: block;
         width: 25px;
-        height: 4px;
-        margin: 4px auto;
+        height: 3px;
+        margin: 5px auto;
         background-color: rgb(24, 24, 24);
         -webkit-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease;
