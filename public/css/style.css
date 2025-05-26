@@ -56,6 +56,24 @@ nav {
     font-family: "Arizonia", cursive;
 }
 
+.language {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+    color: #9CAF88;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.language-btn {
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -336,16 +354,11 @@ nav {
 }
 
 .footer-right i {
-    display: flex;                /* Make icon a flex container */
-    justify-content: center;      /* Center horizontally */
-    align-items: center;          /* Center vertically */
-    border: 2px solid white;
-    border-radius: 50%;
-    padding: 4px;
-    width: 36px;
-    height: 36px;
-    font-size: 1.1em;
-    box-sizing: border-box;       /* Ensure padding is included in width/height */
+    display: flex;        
+    justify-content: center;   
+    align-items: center;   
+    box-sizing: border-box; 
+    padding-top: 4px;     
 }
 
 .footer-right p {
@@ -493,7 +506,7 @@ nav {
         z-index: 1000;
     }
     .nav-menu.active {
-        top: 70px;;
+        top: 10vh;
     }
     .content {
         margin-top: 10vh;
@@ -595,13 +608,12 @@ nav {
     }
 
     .footer-right i {
-        border: 1px solid white;
-        border-radius: 50%;
         padding: 4px;
         width: 28px;
         height: 28px;
         justify-content: center;
-        align-items: center;
+        align-items: center;       
+        padding-top: 8px;     
     }
 
     .copyright {
