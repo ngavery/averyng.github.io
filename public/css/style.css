@@ -339,12 +339,12 @@ nav {
     display: flex;                /* Make icon a flex container */
     justify-content: center;      /* Center horizontally */
     align-items: center;          /* Center vertically */
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
     padding: 4px;
-    width: 28px;
-    height: 28px;
-    font-size: 1em;
+    width: 36px;
+    height: 36px;
+    font-size: 1.1em;
     box-sizing: border-box;       /* Ensure padding is included in width/height */
 }
 
@@ -430,12 +430,30 @@ nav {
     #contact {
         display: block;
     }
+    .hi {
+        margin-bottom: 2%;
+    }
     .avery {
         border-width: 4px;
+        margin-bottom: 3%;
     }
     .content {
         padding-bottom: 20%;
     }
+
+    .socials a {
+    text-decoration: none;
+    color: rgb(24, 24, 24);
+    font-size: 25px;
+    border: 2px solid rgb(24, 24, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 43.5px;
+    width: 43.5px;
+    border-radius: 25px;
+    }
+
     .bar {
         display: block;
         width: 25px;
@@ -545,8 +563,12 @@ nav {
     .footer {
         display: flex;
         flex-direction: column;
-        max-height: 50vh;
-        gap: 10px;
+        max-height: 60vh;
+    }
+        .footer h1 {
+        font-size: 2.5em;
+        margin-top: 10%;
+        margin-bottom: 4%;
     }
     .footer-container {
         display: flex;
@@ -557,6 +579,7 @@ nav {
     .footer-left p {
         max-width: 90%;
         margin-right: auto;
+        margin-bottom: 5%;
     }
 
     .footer-right {
@@ -566,7 +589,6 @@ nav {
         align-items: center;
         margin-right: auto;
         margin-left: 0;
-        margin-top: 10px;
     }
     .footer-right p {
         margin-left: 10px;
@@ -581,16 +603,10 @@ nav {
         justify-content: center;
         align-items: center;
     }
-    
-    .footer h1 {
-        font-size: 2.5em;
-        margin-top: 60px;
-        margin-bottom: 5px;
-    }
 
     .copyright {
         margin-top: 5px;
-        margin-bottom: 60px;
+        margin-bottom: 10%;
     }
 
     .soon h1 {
