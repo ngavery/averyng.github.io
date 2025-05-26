@@ -165,7 +165,7 @@ nav {
 
 .engineer {
     color: rgb(24, 24, 24);
-    font-size: 1.2em;
+    font-size: 2em;
     max-width: 60ch;
 }
 
@@ -206,12 +206,43 @@ nav {
     transition: 0.3s;
 }
 
+/* About section */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    height: fit-content;
+    padding: 10%
+}
+
+.about h1{
+    font-size: 6em;
+    margin-bottom: 2.5%;
+    color: #9CAF88;
+}
+
+.about p {
+    font-size: 2em;
+    max-width: 80%;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 2.5%;
+}
+
+
+
 /* Project preview section */
 
 .projects {
     display: flex;
     width: 100%;
-    background-color: white;
+    background-color: #fffcef;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -305,11 +336,16 @@ nav {
 }
 
 .footer-right i {
-    border: 2px solid white;
+    display: flex;                /* Make icon a flex container */
+    justify-content: center;      /* Center horizontally */
+    align-items: center;          /* Center vertically */
+    border: 1px solid white;
     border-radius: 50%;
-    padding: 8px;
-    justify-content: center;
-    align-items: center;
+    padding: 4px;
+    width: 28px;
+    height: 28px;
+    font-size: 1em;
+    box-sizing: border-box;       /* Ensure padding is included in width/height */
 }
 
 .footer-right p {
@@ -397,6 +433,9 @@ nav {
     .avery {
         border-width: 4px;
     }
+    .content {
+        padding-bottom: 20%;
+    }
     .bar {
         display: block;
         width: 25px;
@@ -466,11 +505,32 @@ nav {
         font-size: 1em;
         max-width: 90%;
     }
+
+    /* About section */
+
+    .about {
+        padding: 20% 0;
+        height: auto;
+        align-items: flex-start;
+        padding: 15% 10%;
+        padding-bottom: 20%;
+    }
+    .about h1 {
+        font-size: 2.5em;
+        margin: 10% 0;
+    }
+    .about p {
+        font-size: 1em;
+        text-align: left;
+    }
+
+    /* PROJECTS */
     
     .projects h1 {
         font-size: 2.5em;
         margin-top: 50px;
         margin-bottom: 50px;
+        text-align: center;
     }
     .project-card {
         margin-bottom: 20px;
@@ -478,6 +538,8 @@ nav {
     .project-card h3 {
         font-size: 1.5em;
     }
+
+    /* FOOTER */
 
     .footer {
         display: flex;
@@ -507,6 +569,16 @@ nav {
     }
     .footer-right p {
         margin-left: 10px;
+    }
+
+    .footer-right i {
+        border: 1px solid white;
+        border-radius: 50%;
+        padding: 4px;
+        width: 28px;
+        height: 28px;
+        justify-content: center;
+        align-items: center;
     }
     
     .footer h1 {
