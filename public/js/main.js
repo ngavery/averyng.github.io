@@ -1,4 +1,4 @@
-const CURRENT_VERSION = "1.0.0";
+const CURRENT_VERSION = "1.0.1";
 
 // Check stored version
 const storedVersion = localStorage.getItem("siteVersion");
@@ -13,11 +13,11 @@ window.addEventListener("load", function () {
 
   if (firstVisitOrNewVersion) {
     // Show animation (fade out)
-    preloader.style.transition = "opacity 0.5s ease";
+    preloader.style.transition = "opacity 2s ease";
     preloader.style.opacity = "0";
     setTimeout(() => {
       preloader.style.display = "none";
-    }, 1000);
+    }, 500);
   } else {
     // Immediately hide preloader without animation
     preloader.style.display = "none";
