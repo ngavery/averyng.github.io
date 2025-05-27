@@ -187,7 +187,7 @@ nav {
     border-right: 5px solid;
     border-color: #9b9682;
     font-size: 6em;
-    width: 490px;
+    width: 489px;
     white-space: nowrap;
     overflow: hidden;
     animation:
@@ -201,7 +201,7 @@ nav {
 
 @keyframes typing {
     from {width: 0;}
-    to {width: 490px;}
+    to {width: 489px;}
 }
 
 .engineer {
