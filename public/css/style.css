@@ -90,8 +90,6 @@ nav {
     font-size: 20px;
     letter-spacing: 0.5px;
     text-decoration: none;
-    padding-top: 3%;
-    padding-bottom: 3%;
 }
 
 .language-btn {
@@ -520,7 +518,24 @@ nav {
         height: auto;
         text-align: center;
         transition: 0.3s;
-        z-index: 100;
+        padding-bottom: 6px;
+    }
+
+    .language {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        color: #9CAF88;
+        font-size: 20px;
+        letter-spacing: 0.5px;
+        text-decoration: none;
+        margin: 16px;
+    }
+
+    .language-btn {
+        text-decoration: none;
+        color: rgb(24, 24, 24);
     }
 
     .item {
