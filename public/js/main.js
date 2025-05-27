@@ -1,11 +1,35 @@
-  window.addEventListener("load", function () {
-    const preloader = document.querySelector(".preloader");
-    preloader.style.transition = "opacity 0.5s ease";
-    preloader.style.opacity = "0";
-    setTimeout(() => {
-      preloader.style.display = "none";
-    }, 500);
+function hidePreloader() {
+  const preloader = document.querySelector(".preloader");
+  preloader.style.transition = "opacity 0.5s ease";
+  preloader.style.opacity = "0";
+  setTimeout(() => {
+    preloader.style.display = "none";
+    document.body.classList.remove("loading");
+  }, 500);
+}
+
+// Wait for window load
+window.addEventListener("load", () => {
+  const keyText = document.querySelector("#avery");
+
+  if (!keyText) {
+    hidePreloader();
+    return;
+  }
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+
+      if (document.fonts) {
+        document.fonts.ready.then(() => {
+          hidePreloader();
+        });
+      } else {
+        hidePreloader();
+      }
+    });
   });
+});
 
 const typingEl = document.getElementById("avery");
 
