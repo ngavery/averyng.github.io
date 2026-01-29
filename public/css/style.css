@@ -263,12 +263,13 @@ nav {
 }
 
 .about h1{
-    font-size: 6em;
+    font-size: 5.5em;
     margin-bottom: 2.5%;
     color: #9CAF88;
 }
 
 .about p {
+    text-indent: 2.5em;
     font-size: 2em;
     max-width: 80%;
     text-align: justify;
@@ -291,7 +292,7 @@ nav {
 }
 
 .projects h1 {
-    font-size: 5em;
+    font-size: 4.5em;
     padding: 5%;
     color: rgb(24, 24, 24);
     margin-top: 3%;
@@ -316,6 +317,7 @@ nav {
     display: flex;
     flex-direction: column;
     width: 350px;
+    height: 500px;
     max-width: 80vw;
     min-height: fit-content;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* horizontal, vertical, blur */
@@ -323,7 +325,6 @@ nav {
 }
 
 .project-card img {
-
     border-radius: 10px 10px 0 0;
 }
 
@@ -341,7 +342,7 @@ nav {
     font-size: 1em;
     margin: 0 0 20px 20px;
     text-align: justify;
-    max-width: 320px;;
+    max-width: 310px;;
 }
 
 /*Footer section*/
@@ -467,250 +468,3 @@ nav {
     background-color: #798d63;
 }
 
-/* FOR PHONE */
-@media (max-width: 1080px) {
-    .header-btn {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-        margin-left: auto;
-    }
-    #contact {
-        display: block;
-    }
-    .hi {
-        margin-bottom: 2%;
-    }
-    .avery {
-        border-width: 4px;
-        margin-bottom: 3%;
-    }
-    .content {
-        padding-bottom: 20%;
-    }
-
-    .socials a {
-    text-decoration: none;
-    color: rgb(24, 24, 24);
-    font-size: 25px;
-    border: 2px solid rgb(24, 24, 24);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 43.5px;
-    width: 43.5px;
-    border-radius: 25px;
-    }
-
-    .bar {
-        display: block;
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        background-color: rgb(24, 24, 24);
-        -webkit-transition: all 0.3s ease-in-out;
-        transition: all 0.3s ease;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }    
-
-    .nav-menu {
-        position: fixed;
-        top: -100%;
-        gap: 0;
-        flex-direction: column;
-        background-color: white;
-        height: auto;
-        text-align: center;
-        transition: 0.3s;
-        padding-bottom: 6px;
-    }
-
-    .language {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 5px;
-        color: #9CAF88;
-        font-size: 20px;
-        letter-spacing: 0.5px;
-        text-decoration: none;
-        margin: 16px;
-    }
-
-    .language-btn {
-        text-decoration: none;
-        color: rgb(24, 24, 24);
-    }
-
-    .item {
-        margin: 16px 0;
-    }
-    .nav {
-        padding: 0 5%;
-        z-index: 1000;
-    }
-    .nav-menu.active {
-        top: 10vh;
-    }
-    .content {
-        margin-top: 10vh;
-        grid-template-columns: 1fr;
-        height:auto;
-    }
-    .left {
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-    }
-    .right {
-        order: -1;
-    }
-    .hi {
-        font-size: 2em;
-    }
-    .avery {
-        font-size: 3em;
-        width: 246px;
-    }
-    @keyframes typing {
-        from {width: 0;}
-        to {width: 246px;}
-    }
-    .engineer {
-        font-size: 1em;
-        max-width: 90%;
-    }
-
-    /* About section */
-
-    .about {
-        padding: 20% 0;
-        height: auto;
-        align-items: flex-start;
-        padding: 15% 10%;
-        padding-bottom: 20%;
-    }
-    .about h1 {
-        font-size: 2.5em;
-        margin: 10% 0;
-    }
-    .about p {
-        font-size: 1em;
-        text-align: left;
-        max-width: 90%;
-    }
-
-    /* PROJECTS */
-    
-    .projects-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        margin-bottom: 15%;
-    }
-    .projects h1 {
-        font-size: 2.5em;
-        margin-top: 50px;
-        margin-bottom: 50px;
-        text-align: center;
-    }
-    .project-card {
-        margin-bottom: 20px;
-    }
-    
-    .project-card h3 {
-        font-size: 1.2em;
-        margin-bottom: 8px;
-    }
-
-    .project-card p {
-        font-size: 0.9em;
-        margin-bottom: 25px;
-    }
-
-    /* FOOTER */
-
-    .footer {
-        display: flex;
-        flex-direction: column;
-        max-height: 60vh;
-    }
-        .footer h1 {
-        font-size: 2.5em;
-        margin-top: 10%;
-        margin-bottom: 4%;
-    }
-    .footer-container {
-        display: flex;
-        flex-direction: column;
-        font-size: 1em;
-        margin-right: auto;
-    }
-    .footer-left p {
-        max-width: 90%;
-        margin-right: auto;
-        margin-bottom: 5%;
-    }
-
-    .footer-right {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        margin-right: auto;
-        margin-left: 0;
-    }
-    .footer-right p {
-        margin-left: 10px;
-    }
-
-    .footer-right i {
-        padding: 4px;
-        width: 28px;
-        height: 28px;
-        justify-content: center;
-        align-items: center;       
-        padding-top: 8px;     
-    }
-
-    .copyright {
-        margin-top: 5px;
-        margin-bottom: 10%;
-    }
-
-    .soon h1 {
-        font-size: 2.5em;
-        max-width: 90%;
-    }
-
-    .soon p {
-        font-size: 1em;
-        max-width: 90%;
-    }
-}
-
-/* FOR LONG MONITOR*/
-@media (min-height: 1000px) {
-    .hi {
-        font-size: 4em;
-    }
-    .avery {
-        font-size: 8em;
-        width: 650px;
-    }
-    @keyframes typing {
-        from {width: 0;}
-        to {width: 650px;}
-    }
-}
